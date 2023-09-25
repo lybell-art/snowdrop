@@ -2,10 +2,6 @@
  * 2023 remake ver.(using ES6)
  */
 
-const MAX_SNOW_NUMBER = 1000;
-const snows = Array.from({length:1000}, ()=>new Snow());
-let indice = 0;
-
 class Snow
 {
 	x = 0;
@@ -29,6 +25,10 @@ class Snow
 		if(this.y > windowHeight) this.active = false;
 	}
 }
+
+const MAX_SNOW_NUMBER = 1000;
+const snows = Array.from({length:1000}, ()=>new Snow());
+let indice = 0;
 
 function setup()
 {
